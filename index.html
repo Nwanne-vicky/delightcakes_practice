@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakes</title>
+    <link rel="stylesheet" href="css/main.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fa fa-shopping-basket"></i> cake</a>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Shops</a>
+        <a href="#">About</a>
+        <a href="#">Reviews</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="icon">
+        <div id="menu-btn" class="fa fa-bars"></div>
+        <div id="search-btn" class="fa fa-search"></div>
+        <div id="cart-btn" class="fa fa-shopping-cart"></div>
+        <div id="login-btn" class="fa fa-user"></div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="slides-container">
+        <div class="slide active">
+          <div class="content">
+            <span>Try delicious cakes</span>
+            <h3>promo 50% off</h3>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+          <div class="img">
+            <img src="./img/home-img.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Try delicious cakes</span>
+            <h3>promo 50% off</h3>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+          <div class="img">
+            <img src="./img/home-img-2.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="slide">
+          <div class="content">
+            <span>Try delicious cakes</span>
+            <h3>promo 50% off</h3>
+            <a href="#" class="btn">Shop now</a>
+          </div>
+          <div class="img">
+            <img src="./img/home-img-2.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div id="next-slide" onclick="next()">
+        <i class="fa fa-angle-right"></i>
+      </div>
+      <div id="prev-slide" onclick="prev()">
+        <i class="fa fa-angle-left"></i>
+      </div>
+    </section>
+    <section class="banner-container">
+      <div class="banner">
+        <img src="./img/banner-img.jpg" alt="" />
+        <div class="content">
+          <span>limited sales</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="./img/banner-img-2.jpg" alt="" />
+        <div class="content">
+          <span>limited sales</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="./img/banner-img-3.jpg" alt="" />
+        <div class="content">
+          <span>limited sales</span>
+          <h3>upto 50% off</h3>
+          <a href="#" class="btn">shop now</a>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Our shop</h1>
+    </div>
+    <section class="category">
+      <h1 class="title">
+        our
+        <span>category</span> <a href="#">view all >></a>
+      </h1>
+      <div class="box-container">
+        <a href="#" class="box">
+          <img src="./img/cat-1.jpg" alt="" />
+          <h3>Cupcakes</h3>
+        </a>
+        <a href="#" class="box">
+          <img src="./img/cat-2.jpg" alt="" />
+          <h3>Chocolate cake</h3>
+        </a>
+        <a href="#" class="box">
+          <img src="./img/cat-3.jpg" alt="" />
+          <h3>Brown bread</h3>
+        </a>
+        <a href="#" class="box">
+          <img src="./img/cat-4.jpg" alt="" />
+          <h3>wheat</h3>
+        </a>
+        <a href="#" class="box">
+          <img src="./img/cat-5.jpg" alt="" />
+          <h3>Cookies</h3>
+        </a>
+      </div>
+    </section>
+    <section class="product">
+      <h1 class="title">our <span>product</span> <a href="#">view all</a></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-5.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/project-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <a href="#" class="fa fa-shopping-cart"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-eye"></a>
+          </div>
+          <div class="img">
+            <img src="./img/cat-1.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Apple fruits cake</h3>
+            <div class="price">$19.9</div>
+            <div class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>About us</h1>
+    </div>
+    <section class="about">
+      <div class="img">
+        <img src="./img/about.jpg" alt="" />
+      </div>
+      <div class="content">
+        <span>Welcome to our products</span>
+        <h3>Your Delicious cakes product</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
+          rerum officia fugiat provident doloremque, perspiciatis suscipit
+          recusandae impedit corrupti alias a sequi in culpa maxime distinctio.
+          Ducimus non, sapiente tempore possimus tempora illum eius molestiae
+          atque dicta architecto sequi perspiciatis? Doloremque ut ipsum
+          assumenda?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+          mollitia asperiores, eaque vitae reiciendis ratione. Eveniet
+          repellendus, rem sapiente id dolor similique exercitationem. Autem,
+          cumque?
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
+    </section>
+    <section class="gallery">
+      <h1 class="title">our <span>gallery</span> <a href="#">view all</a></h1>
+      <div class="box-container">
+        <div class="box">
+          <img src="./img/cat-2.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/about.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/cat-5.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/banner-img-2.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/project-4.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/cat-4.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/project-2.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./img/cat-1.jpg" alt="" />
+          <div class="icons">
+            <a href="#" class="fa fa-eye"></a>
+            <a href="#" class="fa fa-heart"></a>
+            <a href="#" class="fa fa-share-alt"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Client's Review</h1>
+    </div>
+    <section class="info-container">
+      <div class="info">
+        <img src="./img/icon-1.png" alt="" />
+        <div class="content">
+          <h3>Fast delivery</h3>
+          <span>In less than 1hr</span>
+        </div>
+      </div>
+      <div class="info">
+        <img src="./img/icon-2.png" alt="" />
+        <div class="content">
+          <h3>24 / 7 available</h3>
+          <span>Call us anytime</span>
+        </div>
+      </div>
+      <div class="info">
+        <img src="./img/icon-3.png" alt="" />
+        <div class="content">
+          <h3>Easy payment</h3>
+          <span>Cash or Cards</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="review">
+      <div class="box-container">
+        <div class="box">
+          <div class="user">
+            <img src="./img/user-1.jpg" alt="" />
+            <div class="info">
+              <h3>Ray Eir</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+        <div class="box">
+          <div class="user">
+            <img src="./img/user-2.jpg" alt="" />
+            <div class="info">
+              <h3>Elene Chu</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+        <div class="box">
+          <div class="user">
+            <img src="./img/user-3.jpg" alt="" />
+            <div class="info">
+              <h3>Steve Piet</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+        <div class="box">
+          <div class="user">
+            <img src="./img/user-4.jpg" alt="" />
+            <div class="info">
+              <h3>presh El</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+        <div class="box">
+          <div class="user">
+            <img src="./img/uder-5.jpg" alt="" />
+            <div class="info">
+              <h3>Tom Crux</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+        <div class="box">
+          <div class="user">
+            <img src="./img/user-6.jpg" alt="" />
+            <div class="info">
+              <h3>Ruth Wyr</h3>
+              <span>happy client</span>
+            </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+            reiciendis!
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Our Blogs</h1>
+    </div>
+
+    <!-- blogs -->
+
+    <section class="blogs">
+      <h1 class="title">our <span>blogs</span> <a href="#">view all</a></h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="img">
+            <img src="./img/project-2.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/cat-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/project-7.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/cat-4.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/project-6.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/banner-img-3.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="icons">
+              <a href=""><i class="fa fa-calendar"></i>5 jun, 2022</a>
+              <a href=""><i class="fa fa-user"></i>by administrators</a>
+            </div>
+            <h3>blogs title page</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              explicabo ex itaque sequi.
+            </p>
+            <a href="#" class="btn">read more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>Contact us</h1>
+    </div>
+    <section class="contact">
+      <div class="box-container">
+        <div class="box">
+          <div class="img">
+            <img src="./img/contact-1.png" alt="" />
+          </div>
+          <span>our number</span>
+          <p>+234-905-5344</p>
+          <p>+234-905-5344</p>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/contact-3.png" alt="" />
+          </div>
+          <span>our Email</span>
+          <p>jajayr@gmail.com</p>
+          <p>rytin@gmail.com</p>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="./img/contact-2.png" alt="" />
+          </div>
+          <span>our Address</span>
+          <p>toria island lagos</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row">
+        <form action="">
+          <h3>Get in touch</h3>
+          <div class="inputbox">
+            <input type="text" placeholder="enter your name" class="box" />
+            <input type="email" placeholder="enter your email" class="box" />
+          </div>
+          <div class="inputbox">
+            <input type="text" placeholder="enter your number" class="box" />
+            <input type="email" placeholder="enter your subject" class="box" />
+          </div>
+          <textarea
+            placeholder="your message"
+            cols="30"
+            rows="10"
+            class="textarea"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932653378!2d3.1438714678340625!3d6.548376810548721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1655560463723!5m2!1sen!2sng"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <div class="space"></div>
+
+    <!-- footer -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"><i class="fa fa-arrow-right"></i>Home</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>Shops</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>About</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>Reviews</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>Blog</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>Contact</a>
+        </div>
+
+        <div class="box">
+          <h3>extra links</h3>
+
+          <a href="#"><i class="fa fa-arrow-right"></i>my order</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>my favourite</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>my shopcart</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>my account</a>
+          <a href="#"><i class="fa fa-arrow-right"></i>terms or use</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+
+          <a href="#"><i class="fa fa-facebook"></i>facebook</a>
+          <a href="#"><i class="fa fa-twitter"></i>twitter</a>
+          <a href="#"><i class="fa fa-instagram"></i>instagram</a>
+          <a href="#"><i class="fa fa-linkedin"></i>linkedin</a>
+          <a href="#"><i class="fa fa-pinterest"></i>pinterest</a>
+        </div>
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest update</p>
+          <form action="">
+            <input type="email" placeholder="enter your email address" />
+            <input type="submit" class="btn" value="subscribe" />
+          </form>
+          <div class="pay">
+            <div class="img">
+              <img src="./img/pay-1.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="./img/pay-2.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="./img/pay-3.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="./img/pay-4.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
